@@ -106,6 +106,21 @@ public class D1_StarView {
 			
 		}
 		
+		
+		
+		//절대값 이용해서 출력
+		  int aa=9; //홀수값만 가능
+	      for (int i = 0; i < aa; i++) {
+//		         System.out.println(i);
+	         for (int j = 0; j < Math.abs(aa/2-i); j++) { // 4 3 2 1 0 1 2 3 4
+	            System.out.print(" ");
+	         }
+	         for (int j = 0; j < aa-Math.abs(aa-1-i*2); j++) {  //1 3 5 7 9  7  5  3  1
+	            System.out.print("*");                          //8 6 4 2 0 -2 -4 -6 -8
+	         }
+	         System.out.println();
+	      }
+		
 	}
 
 }
