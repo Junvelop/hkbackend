@@ -24,7 +24,8 @@ public class D4_ConstructorTest {
 	//디펄트 생성자는 단독으로 사용할 때는 생략이 가능하지만 오버로딩하면 생략이 안 돼 
 	 public D4_ConstructorTest() {
 		// TODO Auto-generated constructor stub
-		 super(); // 부모의 생성자를 호출 (이 코드는 반드시 첫줄에 작성한다)
+		// super(); // 부모의 생성자를 호출 (이 코드는 반드시 첫줄에 작성한다)
+		 this(2); // 얘는 super()과 같이 쓸 수 없음 이미 기본 생성자가 실행되고 있는데 오버로딩 생성자를 호출하기 떄문 얘를 쓰고 싶으면 super()을 주석처리 하면 됨 왜냐면 생성자는 한개만 실행을 하기 떄문이다. super()는 부모클래스의 생성자니깐  
 		 this.size = 60;
 		 
 	} 	
@@ -32,6 +33,7 @@ public class D4_ConstructorTest {
 	// 생성자 오버로딩 (파라미터 1개짜리)
 	 public D4_ConstructorTest(int size) { // 생성자를 오버로딩 했으면 기본 생성자가 없으면 안 돼 진짜 쓰고 싶으면 작성을 해야 돼 
 	// TODO Auto-generated constructor stub
+		 super();
 		 this.size = size;
 		 
 		 
