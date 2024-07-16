@@ -10,7 +10,7 @@ public interface D3_InterfaceTest {
 	
 	//상수 선언
 	public static final int A = 5;
-	public int B = 10;
+	public int B = 10; // 인터페이스에서 얘내들은 자동으로 상수화가 되고 static으로 올라간다. 
 	
 	//알아서 추상 메서드로 인식 인터페이스는
 	public abstract int test();

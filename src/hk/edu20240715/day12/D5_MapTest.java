@@ -1,9 +1,9 @@
 package hk.edu20240715.day12;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.HashMap; // 맵을 구현한 클래스
+import java.util.Iterator; // 인터페이스 
+import java.util.Map; // 인터페이스
+import java.util.Set; // 인터페이스 
 
 public class D5_MapTest {
 
@@ -17,7 +17,7 @@ public class D5_MapTest {
 		
 		System.out.println("Map의 값 : " + " " + map.get("하나"));
 		Set<String> setKeyMap = map.keySet(); //key 값만 set으로 반환 
-		Iterator<String> iterKeyMap = setKeyMap.iterator();
+		Iterator<String> iterKeyMap = setKeyMap.iterator(); //이터레이터 메서드는 이터키맵이라는 객체가 맵을 순회할 수 있게 만들어줌 
 		while(iterKeyMap.hasNext()) {
 			
 			String str = iterKeyMap.next();

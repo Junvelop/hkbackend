@@ -6,6 +6,7 @@ public class D1_AnimalTest {
 		// TODO Auto-generated method stub
 		D1_Animal am = new D1_Human(); // 부모 타입이지만 실제로 담고 있는 것은 휴먼 객체임 그러기에 휴먼 클래스의 오버라이딩 된 메소드가 호출이 됨.
 		am.move();
+	//	am.test(); 오류 발생 
 		
 		
 		
